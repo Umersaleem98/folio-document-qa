@@ -4,10 +4,11 @@ from zipfile import ZipFile, ZIP_DEFLATED
 
 root = Path(__file__).resolve().parent
 destination = root.parent / 'document-qa-source.zip'
-files = [root / '.gitignore', root / 'README.md', root / 'package_source.py']
+files = [root / '.gitignore', root / 'README.md', root / 'package_source.py', root / 'Configure-Folio.cmd']
 files += [root / 'backend' / name for name in [
     '.env.example', 'requirements.txt', 'requirements.lock.txt', 'alembic.ini',
     'setup_local.py', 'verify_xampp.py',
+    'configure_project.py',
     'install_portable_ollama.py', 'start_local_ai.py', 'start-ai.ps1', 'download_ai_models.py',
 ]]
 files += [root / 'frontend' / name for name in [

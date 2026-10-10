@@ -2,6 +2,25 @@
 
 A complete local project with FastAPI, SQLAlchemy, Alembic, XAMPP MySQL/MariaDB, React/Vite/TypeScript, Bootstrap 5, Argon2id, JWT sessions, PyMuPDF, Chroma and configurable real AI providers. No sample documents or fake runtime answers are included.
 
+## App screenshots
+
+Real screenshots from the running responsive application. No chat messages, API keys, or PDF content are shown.
+
+<table><tr><th>Dashboard</th><th>Document chat</th></tr><tr><td><img src="docs/images/dashboard.jpg" alt="Folio responsive dashboard" width="360"></td><td><img src="docs/images/chat.jpg" alt="Folio document chat interface" width="360"></td></tr></table>
+
+## Settings window
+
+After installing backend dependencies, double-click **Configure-Folio.cmd** in the project root. Alternatively:
+
+```powershell
+cd "D:\Web Works\document-qa\backend"
+.\.venv\Scripts\python.exe configure_project.py
+```
+
+Enter your database URL, chat API endpoint/key and model, then click **Save settings**. Existing keys are masked and existing JWT secrets are preserved. The utility saves only to ignored `backend/.env`; restart the API and worker to apply changes. It does not install dependencies, create your database, run migrations, or launch services. Follow the setup instructions below for those steps. With a fresh checkout, follow the backend dependency installation step before opening the window.
+
+For Groq, use `openai-compatible`, base URL `https://api.groq.com/openai/v1`, your own API key, and a model available in your account. Local embeddings still require the Ollama terminal. Changing embedding model settings requires reindexing documents.
+
 Start with [Phase 1 architecture](docs/ARCHITECTURE.md), then follow the steps below. Source root: `D:\Web Works\document-qa`.
 
 **On the current workstation:** dependencies, the private ignored `.env`, the dedicated database, migrations and default roles are prepared. An administrator account was created at your request; its credentials were provided in chat. The official portable CPU-only Ollama runtime and both configured models are installed, running and verified with a real cited-answer test. Start the local AI terminal from step 4 whenever you restart the project. See [initial validation](docs/VALIDATION.md) and [the AI fix and live verification](docs/AI-FIX-VALIDATION.md).
