@@ -1,0 +1,5 @@
+Generated with the built-in image-generation tool. Saved artwork: `images/linkedin-banner.png`.
+
+Final prompt:
+
+Use case: ads-marketing. Create a polished LinkedIn personal profile cover banner for Umer Saleem, a full-stack developer building AI document Q&A applications. Extremely wide horizontal 4:1 composition, intended 1584 by 396 pixels. Deep forest green and ivory palette inspired by Folio. Restrained premium software-engineering design with subtle document sheets, vector-like connected retrieval nodes and fine architectural lines on the right. Keep the bottom-left 25 percent empty for the LinkedIn profile photo overlay. Place all important typography in the upper center-right safe area, generous padding. Exact text: "UMER SALEEM" large bold clean sans-serif, then "Full-Stack Developer | AI & RAG Applications" and small "Python · FastAPI · React · TypeScript · MySQL", then a compact secondary label "FOLIO — DOCUMENT INTELLIGENCE". Clear readable correct spelling. No portraits, no invented credentials, no company affiliations, no watermark, no mock LinkedIn UI. Elegant graphic design, crisp edges, professional balanced layout.
